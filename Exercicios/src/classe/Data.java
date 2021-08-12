@@ -13,6 +13,16 @@ public class Data {
 //		ano = 1970;
 		this(1, 1, 1970);//this () tb chama instancia, isso é um construtor
 	}
+
+//	VALORES PADRÕES DE VARIÁVEIS DE INSTANCIA QUANDO N INFORMAMOS(SÃO INCIALIZADAS AUTOMATICAMENTE)
+//	VARIÁVEIS LOCAIS NÃO SÃO INICIALIZADAS
+//	CONSTANTES DEVEM SER INICIALIZADAS DE QUALQUER MANEIRA (NEM QUE ELA RECEBA O VALOR DENTRO DO MÉTODO)	
+//byte, short, int, long --> 0	
+//float, double --> 0.0	
+//boolean --> false
+//char -->  '\u0000'(primeiro caracter da tabela unicode)
+//Objetos --> null (não apontam para nenhum endereço da memória)
+	
 	Data(int dia, int mes, int ano){//OS ATRIBUTOS CRIADOS NOS MÉTODOS SERÃO VISÍVEIS APENAS NOS MÉTODOS QUE FORAM CRIADOS E FORA DELES SERÃO DESCARTADOS
 		this.dia = dia;//aqui diferenciamos as variáveis de instancia das variáveis da classe com o "this."
 		this.mes = mes;
